@@ -1,22 +1,15 @@
-
-import Footer from "./Footer.jsx"
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 
 function App() {
-
-  let nombre = "pepe"
-
-  const sumar = ()=>{
-    console.log ( 1 + 1 )
-  }
-
-  return <div>
-
-  <h1> Hola {nombre} </h1>
-  <h2> como estas </h2>
-  <button onClick={sumar}> Sumar </button>
-  <Footer />
-  
-  </div>
+  return (
+    <div>
+      <Navbar />
+      <Home />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
